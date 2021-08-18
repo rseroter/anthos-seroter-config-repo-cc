@@ -5,7 +5,7 @@ metadata:
   namespace: config-control
 spec:
   title: Storage Custom Role
-  description: This role only contains two permissions - read and update
+  description: This role only contains two permissions - list and get
   permissions:
     - storage.buckets.list
     - storage.buckets.get
