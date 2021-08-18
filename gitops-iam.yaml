@@ -1,0 +1,12 @@
+apiVersion: iam.cnrm.cloud.google.com/v1beta1
+kind: IAMCustomRole
+metadata:
+  name: iamcustomstoragerole
+  namespace: config-control
+spec:
+  title: Storage Custom Role
+  description: This role only contains two permissions - read and update
+  permissions:
+    - storage.buckets.list
+    - storage.buckets.get
+  stage: GA
